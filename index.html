@@ -1,16 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshil Patel - Unity Game Developer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f4f4f4;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project {
+      background: #1e1e1e;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-content {
+      padding: 1rem 1.5rem;
+    }
+    .project-content h2 {
+      margin-top: 0;
+      color: #00bcd4;
+    }
+    .project-content p {
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1e1e1e;
+      color: #666;
+    }
+    a {
+      color: #00bcd4;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Harshil Patel, a Unity Developer!</p>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="link-to-project1">Multiplayer Card Game</a></li>
-        <li><a href="link-to-project2">2D Puzzle Platformer</a></li>
-        <li><a href="link-to-project3">Endless Runner</a></li>
-    </ul>
+  <header>
+    <h1>Harshil Patel</h1>
+    <p>Unity Game Developer | C# | Mobile & Casual Games</p>
+  </header>
+
+  <section>
+    <div class="project">
+      <img src="https://via.placeholder.com/900x400?text=Multiplayer+Card+Game" alt="Multiplayer Card Game">
+      <div class="project-content">
+        <h2>Multiplayer Card Game</h2>
+        <p>A real-time online card game using Photon Networking. Features player matchmaking, AI bots, and interactive UI built in Unity.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/900x400?text=2D+Puzzle+Platformer" alt="2D Puzzle Platformer">
+      <div class="project-content">
+        <h2>2D Puzzle Platformer</h2>
+        <p>A physics-based puzzle platformer with smooth controls, increasing difficulty, and original level design. Built for Android with performance optimization.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://via.placeholder.com/900x400?text=Endless+Runner" alt="Endless Runner Game">
+      <div class="project-content">
+        <h2>Endless Runner</h2>
+        <p>Fast-paced mobile runner game featuring procedural level generation, character skins, and monetization via ads and IAPs.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: harshilp079@gmail.com | <a href="https://www.linkedin.com/in/harshil-patel-068179234" target="_blank">LinkedIn</a></p>
+  </footer>
 </body>
 </html>
