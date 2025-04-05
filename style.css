@@ -1,161 +1,178 @@
 /* === Base Styles === */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-  color: #f4f4f4;
-}
-
-a {
-  color: #00bcd4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fff;
-}
-
-/* === Navigation === */
-nav {
-  background: #000;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  width: 100%;
-  margin: auto;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #00bcd4;
-}
-
-.menu {
-  display: flex;
-  gap: 2rem;
-}
-
-.menu a {
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-/* === Hamburger for Mobile === */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 4px;
-}
-
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background: #00bcd4;
-}
-
-/* === Header === */
-header {
-  background: #1e1e1e;
-  padding: 2rem;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #aaa;
-}
-
-/* === Section Styles === */
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-.project {
-  background: #1e1e1e;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.project img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.project-content {
-  padding: 1rem 1.5rem;
-}
-
-.project-content h2 {
-  margin-top: 0;
-  color: #00bcd4;
-}
-
-.project-content p {
-  color: #ccc;
-}
-
-/* === About Section === */
-#about h2 {
-  text-align: center;
-  color: #00bcd4;
-}
-
-#about p {
-  max-width: 800px;
-  margin: 1rem auto;
-  text-align: center;
-  color: #ccc;
-}
-
-/* === Footer === */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #1e1e1e;
-  color: #666;
-}
-
-/* === Responsive === */
-@media (max-width: 768px) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #f4f4f4;
+  }
+  
+  a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  /* === Navigation === */
+  nav {
+    background: #000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #00bcd4;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logo .emoji {
+    font-size: 2rem;
+  }
+  
   .menu {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .menu a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  /* === Hamburger for Mobile === */
+  .hamburger {
     display: none;
     flex-direction: column;
-    background: #000;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #00bcd4;
+  }
+  
+  /* === Header === */
+  header {
+    background: #1e1e1e;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  
+  /* === Section Styles === */
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .project {
+    background: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .project-content {
+    padding: 1rem 1.5rem;
+  }
+  
+  .project-content h2 {
+    margin-top: 0;
+    color: #00bcd4;
+  }
+  
+  .project-content p {
+    color: #ccc;
+  }
+  
+  /* === About Section === */
+  #about h2 {
+    text-align: center;
+    color: #00bcd4;
+  }
+  
+  #about p {
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+    color: #ccc;
+  }
+  
+  /* === Footer === */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #1e1e1e;
+    color: #666;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background: #000;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+  
+    .menu.show {
+        display: flex;
+        margin-top: 1rem;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .menu.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
+      
