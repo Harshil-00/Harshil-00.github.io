@@ -1,3 +1,4 @@
+/* === Base Styles === */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -6,6 +7,16 @@ body {
   color: #f4f4f4;
 }
 
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* === Navigation === */
 nav {
   background: #000;
   padding: 1rem 2rem;
@@ -36,16 +47,11 @@ nav {
 }
 
 .menu a {
-  color: #00bcd4;
-  text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-.menu a:hover {
-  color: #fff;
-}
-
+/* === Hamburger for Mobile === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -59,6 +65,79 @@ nav {
   background: #00bcd4;
 }
 
+/* === Header === */
+header {
+  background: #1e1e1e;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* === Section Styles === */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  background: #1e1e1e;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-content {
+  padding: 1rem 1.5rem;
+}
+
+.project-content h2 {
+  margin-top: 0;
+  color: #00bcd4;
+}
+
+.project-content p {
+  color: #ccc;
+}
+
+/* === About Section === */
+#about h2 {
+  text-align: center;
+  color: #00bcd4;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 1rem auto;
+  text-align: center;
+  color: #ccc;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1e1e1e;
+  color: #666;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -80,5 +159,3 @@ nav {
     display: flex;
   }
 }
-
-/* You can also move your other styles from <style> into here */
