@@ -4,17 +4,20 @@
  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harshil Patel - Unity Game Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
  <nav>
-    <div class="nav-wrapper">
-      <div class="logo">Harshil Patel</div>
+      <div class="logo"><span class="emoji">🎮</span> Harshil Dev</div>
       
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="navMenu">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="/Harshil_Resume.pdf" target="_blank">Resume</a>
       </div>
       
       <div class="menu">
@@ -23,7 +26,6 @@
         <a href="#contact">Contact</a>
         <a href="Harshil_Resume.pdf" target="_blank">Resume</a>
       </div>
-    </div>
   </nav>
  
   <script src="script.js"></script>
@@ -34,23 +36,23 @@
   </header>
 
   <section id="projects">
-    <div class="project">
-      <img src="https://via.placeholder.com/900x400?text=Multiplayer+Card+Game" alt="Multiplayer Card Game">
+    <div class="project fade-in">
+      <img src="https://via.placeholder.com/900x400?text=Multiplayer+Card+Game" alt="Card Game">
       <div class="project-content">
-        <h2>Multiplayer Card Game</h2>
+        <h2>Card Game</h2>
         <p>A real-time online card game using Photon Networking. Features player matchmaking, AI bots, and interactive UI built in Unity.</p>
       </div>
     </div>
 
-    <div class="project">
-      <img src="https://via.placeholder.com/900x400?text=2D+Puzzle+Platformer" alt="2D Puzzle Platformer">
+    <div class="project fade-in">
+      <img src="https://via.placeholder.com/900x400?text=2D+Puzzle+Platformer" alt="2D Puzzle ">
       <div class="project-content">
-        <h2>2D Puzzle Platformer</h2>
-        <p>A physics-based puzzle platformer with smooth controls, increasing difficulty, and original level design. Built for Android with performance optimization.</p>
+        <h2>2D Puzzle</h2>
+        <p>A puzzle with smooth controls, increasing difficulty, and original level design. Built for Android with performance optimization.</p>
       </div>
     </div>
 
-    <div class="project">
+    <div class="project fade-in">
       <img src="https://via.placeholder.com/900x400?text=Endless+Runner" alt="Endless Runner Game">
       <div class="project-content">
         <h2>Endless Runner</h2>
@@ -67,7 +69,7 @@
   </section>
 
   <footer id="contact">
-    <p>Contact: harshilp079@gmail.com | <a href="https://www.linkedin.com/in/harshil-patel-068179234" target="_blank">LinkedIn</a></p>
+    <p>Contact: harshil.patel0700@gmail.com | <a href="https://www.linkedin.com/in/harshil-patel-068179234" target="_blank">LinkedIn</a></p>
   </footer>
 </body>
 </html>
