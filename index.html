@@ -1,101 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+ <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harshil Patel - Unity Game Developer</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f4f4f4;
-    }
-    nav {
-      background: #000;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #00bcd4;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    header {
-      background: #1e1e1e;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #aaa;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .project {
-      background: #1e1e1e;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-    .project img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .project-content {
-      padding: 1rem 1.5rem;
-    }
-    .project-content h2 {
-      margin-top: 0;
-      color: #00bcd4;
-    }
-    .project-content p {
-      color: #ccc;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background: #1e1e1e;
-      color: #666;
-    }
-    a {
-      color: #00bcd4;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
  <nav>
-  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1100px; width: 100%; margin: auto;">
-    <div style="font-size: 1.2rem; font-weight: bold; color: #00bcd4;">Harshil Patel</div>
-    <div style="display: flex; gap: 2rem;">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="Harshil_Resume.pdf" target="_blank">Resume</a>
+    <div class="nav-wrapper">
+      <div class="logo">Harshil Patel</div>
+      
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      <div class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="Harshil_Resume.pdf" target="_blank">Resume</a>
+      </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
+ 
+  <script src="script.js"></script>
 
   <header>
     <h1>Harshil Patel</h1>
